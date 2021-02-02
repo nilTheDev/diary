@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Add Post
+{% endblock %}
+
+{% block main %}
+<div class="login-container" id="add-form">
+  <div class="heading-container">
+    <h2>Add Post</h2>
+  </div>
+
+  <div class="form-container">
+    <form action="/add-post" enctype="multipart/form-data" method="POST">
+      <textarea autofocus autocomplete="off" maxlength="400" name="content" placeholder="write something..." required></textarea>
+      <input accept="image/png, image/jpeg, image/jpg" type="file" name="image">
+      {% if msg: %}
+        <p>{{msg}}</p>
+      {% endif %}
+      <button type="submit">submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
