@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Signup
+{% endblock %}
+
+{% block main %}
+<div class="login-container">
+  <div class="heading-container">
+    <h2>Signup</h2>
+  </div>
+  <div class="links-container">
+    <a href="/login">Login</a>
+    <a id="active" href="/register">Signup</a>
+  </div>
+  <div class="form-container">
+    <form action="/signup" method="POST">
+      <input autofocus autocomplete="off" minlength="6" maxlength="56" name="username" placeholder="username" required type="text">
+      <input autocomplete="off" minlength="6" name="password" placeholder="password" required type="password">
+      <input autocomplete="off" minlength="6" name="confirm-password" placeholder="confirm password" type="password">
+      {% if msg: %}
+        <p>{{msg}}</p>
+      {% endif %}
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+	Log In
+{% endblock %}
+
+{% block main %}
+	<div class="login-container">
+		<div class="heading-container">
+			<h2>Login</h2>
+		</div>
+		<div class="links-container">
+			<a id="active" href="/login">Login</a>
+			<a href="/signup">Signup</a>
+		</div>
+		<div class="form-container">
+			<form action="/login" method="POST">
+				<input autofocus autocomplete="off" minlength="6" name="username" placeholder="username" required type="text">
+				<input autocomplete="off" minlength="6" name="password" placeholder="password" required type="password">
+				{% if msg: %}
+					<p>{{msg}}</p>
+				{% endif %}
+				<button type="submit">Login</button>
+			</form>
+		</div>
+	</div>
+{% endblock %}

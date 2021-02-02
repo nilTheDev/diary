@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Diary: {% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="../static/images/diary.svg">
+  </head>
+  <body>
+    <heading class="nav-container">
+      <div class="heading">
+        <div class="icon">
+          <a href="/"><img src="../static/images/diary.svg"></a>
+        </div>
+      </div>
+      
+      <nav>
+        <ul>
+          {% if session: %}
+            <li><a href="/">HOME</a></li>
+            <li><a href="/add-post">ADD</a></li>
+            <li><a href="/logout">LOG OUT</a></li>
+          {% else: %}
+          <li><a href="/">HOME</a></li>
+          <li><a href="/signup">SIGN UP</a></li>
+          <li><a href="/login">LOG IN</a></li>
+          {% endif %}
+        </ul>
+      </nav>
+    </heading>
+    {% block main %}
+    {% endblock %}
+    <div class="footer-container">
+      <p>by nilanjan with <span>&#x2764;</span> </p>
+    </div>
+  </body>
+</html>

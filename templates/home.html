@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block main %}
+    <div class="body-container">
+
+      {% if not session: %}
+        <div class="not-logged-in">
+          <img src="../static/images/yelling-svgrepo-com.svg">
+          <p>You're not even logged in.  <a href="/login">log in now</a> or <a href="/signup">signup</a>.</p>
+        </div>
+
+
+      {% else %}
+
+        {% if not posts: %}
+          <div class="no-post">
+            <img src="../static/images/emoticon.svg">
+            <p>Can't find anything. <a href="/add-post">Add something now</a>!</p>
+          </div>
+
+        {% else: %}
+
+          {% for post in posts: %}
+          <div class="post-container">
+            <div class="post-head">
+              <h5>{{ post['username'] }}</h5>
+              <h5>{{ post['datetime'] }}</h5>
+            </div>
+            <div class="post-body">
+              <p>{{ post['content'] }}</p>
+            </div>
+            {% if post['image']: %}
+              <div class="post-image">
+                <img src="../static/images/user_upload/{{ post['image'] }}">
+              </div>
+            {% endif %}
+            <div class="post-foot">
+              <form action="/" method="POST">
+                <input type="hidden" name="post-id" value="{{ post['post_id'] }}">
+                <button type="submit"><img src="../static/images/trash.svg" alt=""></button>
+              </form>
+            </div>
+          </div>
+          {% endfor %}
+        
+        {% endif %}
+        
+      {% endif %}
+    </div>
+
+  {% endblock %}
+    
