@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+
+
+/* NAVBAR STARTS */
+
+.nav-container {
+  width: 100%;
+  background-color: rgb(53, 111, 187);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-container > .heading, .nav-container > nav {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.nav-container > nav > ul {
+  margin: 20px 20px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;;
+  font-weight: bold;
+}
+
+.nav-container > nav > ul > li {
+  margin: 0px 20px;
+}
+
+.nav-container img {
+  width: 100px;
+}
+.nav-container a:link, .nav-container a:visited {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  /* color: rgb(228, 228, 228); */
+  color: antiquewhite;
+}
+
+/* NAVBAR ENDS */
+
+
+/* HOME BODY STARTS */
+
+.body-container {
+  width: 40%;
+}
+
+.post-container, .not-logged-in, .no-post {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(88, 88, 88);
+  box-shadow: 0px 0px 10px 2px rgba(168, 168, 168, 0.692);
+  border-radius: 8px;
+  margin: 20px 0px;
+}
+
+.post-container{
+  transition: all .8s ease-in-out;
+}
+
+
+.post-container:hover{
+  background-color: rgb(75, 75, 75);
+  color: antiquewhite;
+}
+
+
+.not-logged-in, .no-post {
+  transition: all 0.4s ease-in-out;
+}
+
+.not-logged-in:hover, .no-post:hover {
+  transform: scale(1.03);
+}
+
+.post-head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(53, 111, 187);
+  font-size: 22px;
+}
+
+.post-body, .post-foot {
+  display: flex;
+  justify-content: center;
+}
+
+.post-body, .post-head, .post-foot {
+  padding: 20px 20px;
+}
+
+.post-image {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.post-image img {
+  display: block;
+  width: 100%;
+  border-top: 2px solid rgb(82, 82, 82);
+  border-bottom: 2px solid rgb(82, 82, 82);
+}
+
+.post-foot img {
+  width: 30px;
+}
+
+.post-foot button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.post-foot button:focus {
+  outline: 0;
+}
+
+.not-logged-in, .no-post {
+  align-items: center;
+}
+
+.not-logged-in p, .not-logged-in img, .no-post p, .no-post img {
+  margin: 20px;
+}
+
+.not-logged-in img, .no-post img {
+  width: 70px;
+}
+
+.not-logged-in p, .no-post p {
+  font-weight: bold;
+}
+
+.not-logged-in a:link, .no-post a:link, .not-logged-in a:visited, .no-post a:visited {
+  text-decoration: none;
+  color: rgb(53, 111, 187);
+}
+
+/* HOME BODY ENDS */
+
+
+
+
+/* FOOTER STARTS */
+
+.footer-container {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: rgb(88, 88, 88);
+  width: 100%;
+  border-top: 3px solid rgba(53, 111, 187, 0.658);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container p {
+  padding: 40px 0px;
+  
+}
+
+.footer-container span {
+  color: rgb(179, 1, 1);
+}
+
+/* FOOTER ENDS */
+
+
+
+
+
+
+
+
+/* LOGIN / SIGNUP / ADD STARTS */
+
+.login-container {
+  width: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 10px 2px rgba(168, 168, 168, 0.692);
+  border-radius: 8px;
+  margin: 100px 0px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#add-form {
+  width: 40%;
+}
+
+.heading-container {
+  width: 100%;
+  border-bottom: 2px solid rgba(187, 187, 187, 0.747);
+  color: rgb(82, 82, 82);
+  display: flex;
+  justify-content: center;
+}
+
+.heading-container > h2 {
+  font-size: 38px;
+  margin: 3% 0%;
+}
+
+.links-container {
+  width: 90%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.links-container > a {
+  display: block;
+  padding: 8px 5px;
+}
+
+.links-container > a:link {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links-container > a:visited {
+  color: rgb(82, 82, 82);
+}
+
+#active {
+  color: rgb(53, 111, 187);
+  border-bottom: 3px solid rgb(53, 111, 187);
+}
+
+.form-container {
+  width: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form > input, form > textarea {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  height: 50px;
+  border: 2px solid rgba(128, 128, 128, 0.589);
+  padding: 2px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(82, 82, 82);
+  border-radius: 5px;
+  background-color: rgba(243, 243, 243, 0.589);
+}
+
+form > textarea {
+  resize: none;
+  height: 300px;
+  padding: 10px 10px;
+}
+
+form > input:focus, form > textarea:focus {
+  outline: 0;
+}
+
+form > input::placeholder, form > textarea::placeholder {
+  font-size: 20px;
+}
+
+form > input[type=file]{
+  border: none;
+  padding: 0px 0px;
+}
+
+.login-container button {
+  width: 111.3%;
+  height: 50px;
+  border: none;
+  background-color: rgb(53, 111, 187);
+  color: antiquewhite;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+.login-container button:focus {
+  outline: 0;
+}
+
+form > p {
+  margin-top: 10px;
+  color: rgb(82, 82, 82);
+  font-weight: 650;
+}
+
+/* LOGIN / SIGNUP / ADD ENDS */
+
+
