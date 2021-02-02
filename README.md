@@ -1,6 +1,8 @@
 This is my final project for cs50 course. It is a simple web application
 with a flask (python) backend and SQLite database. In the front end
-no Javascript is used. Only pure CSS for styling purpose.
+no Javascript is used. Only pure CSS is used for styling purpose.
+
+A basic demonstration of the web app can be found in this link https://youtu.be/-wCyZu21gFU
 
 The name of the web app is Diary as it acts as a personal diary for the user.
 
