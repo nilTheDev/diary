@@ -1,10 +1,14 @@
-This is my final project for cs50 course. It is a simple web application
-with a flask (python) backend and SQLite database. In the front end
-no Javascript is used. Only pure CSS is used for styling purpose.
+A final project is a part of the famous CS50 course curriculum. This is my final project. It works as a personal diary. 
+
+The tech stack HTML, CSS, Python, Flask, Sqlite
+
+Here is how it looks,
+
+
+
 
 A basic demonstration of the web app can be found in this link https://youtu.be/-wCyZu21gFU
 
-The name of the web app is Diary as it acts as a personal diary for the user.
 
 Main Functions:
 
