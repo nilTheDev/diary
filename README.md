@@ -7,6 +7,13 @@ Here is how it looks,
 
 
 
+![image2](https://raw.githubusercontent.com/nilTheDev/diary/main/images/Screenshot%20from%202021-05-08%2020-05-19.png)
+
+![image1](https://github.com/nilTheDev/diary/blob/main/images/Screenshot%20from%202021-05-08%2020-07-14.png)
+
+![image3](https://github.com/nilTheDev/diary/blob/main/images/Screenshot%20from%202021-05-08%2020-05-27.png)
+
+
 A basic demonstration of the web app can be found in this link https://youtu.be/-wCyZu21gFU
 
 
