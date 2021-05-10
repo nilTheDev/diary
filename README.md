@@ -1,3 +1,6 @@
+
+# Diary
+
 A final project is a part of the famous CS50 course curriculum. This is my final project. It works as a personal diary. 
 
 The tech stack HTML, CSS, Python, Flask, Sqlite
